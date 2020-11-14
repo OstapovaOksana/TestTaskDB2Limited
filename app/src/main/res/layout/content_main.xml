@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:orientation="vertical"
+    >
+
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView android:text="ПриватБанк"
+                android:layout_gravity="center"
+                android:textSize="20dp"/>
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="onClick"
+                android:src="@drawable/calendar"
+                android:background="#0000"/>
+
+            <EditText
+                android:id="@+id/edit1"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textSize="15dp"/>
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="113dp"
+                android:text="Валюта"
+                android:layout_gravity="center"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:layout_width="131dp"
+                android:layout_gravity="center"
+                android:text="Покупка"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="89dp"
+                android:layout_gravity="center"
+                android:text="Продажа"
+                android:textSize="15dp" />
+        </TableRow>
+
+    </TableLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="211dp">
+
+        <TableLayout
+            android:id="@+id/tableLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="255dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TableRow>
+
+                <TextView
+
+                    android:layout_width="122dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="119dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:layout_width="102dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"/>
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+    <TableLayout
+        android:id="@+id/tableLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView android:text="НБУ"
+                android:textSize="20dp"
+                android:layout_gravity="center"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="onClickbtn2"
+                android:src="@drawable/calendar"
+                android:background="#0000"/>
+
+            <EditText
+                android:id="@+id/edit2"
+                android:layout_width="97dp"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textSize="15dp" />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:baselineAligned="true"
+            android:id="@+id/row">
+
+            <TextView
+                android:layout_width="119dp"
+                android:text="Валюта"
+                android:textSize="15dp"
+                android:id="@+id/txtcur"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="129dp"
+                android:text="Покупка"
+                android:textSize="15dp"
+                android:id="@+id/txtpur"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/txtsale"
+                android:layout_width="41dp"
+                android:layout_gravity="center"
+                android:text="Продажа"
+                android:textSize="15dp" />
+        </TableRow>
+
+    </TableLayout>
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scroll">
+    <TableLayout
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tableLayout4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow >
+
+            <TextView
+
+                android:layout_width="122dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="119dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="102dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"/>
+        </TableRow>
+    </TableLayout>
+</ScrollView>
+</LinearLayout>
